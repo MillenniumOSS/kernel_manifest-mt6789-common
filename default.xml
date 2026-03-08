@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/" />
-  <remote name="mt6789-dev" fetch="https://github.com/MillenniumOSS" revision="bka" />
+  <remote name="mt6789-dev" fetch="https://github.com/MillenniumOSS" revision="vic" />
 
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
-  <project path="yunluo-kernel" name="kernel_xiaomi-yunluo" remote="mt6789-dev">
+  <project path="yunluo-kernel" name="kernel_xiaomi-yunluo" remote="mt6789-dev" revision="bka" >
     <linkfile dest="build.config" src="build.config.yunluo" />
   </project>
 
-  <project path="mediatek-modules/gpu" name="kernel_mediatek-modules_gpu" remote="mt6789-dev" />
+  <project path="mediatek-modules/gpu" name="kernel_mediatek-modules_gpu" remote="mt6789-dev" revision="bka" />
 
   <project path="mediatek-modules/connectivity/common"
     name="kernel_mediatek-modules_connectivity_common" remote="mt6789-dev" />
